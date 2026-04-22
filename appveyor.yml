@@ -161,8 +161,8 @@ deploy:
   tag: $(APPVEYOR_REPO_TAG_NAME)
   provider: GitHub
   auth_token:
-    secure: d3qqX7bmrBiKJI38yFPc5vHrGGfS3LxLC7FaG6ewI2ghPPE22Pk6QtyrEFFb73PL
-  artifact: /.*\.exe/
+    secure: ksDPeYIwb/WcjDidCuZG8W2lgeBbEJVtWcpMSsYHi2NnApg+iRnd0NKltdMfVu/B
+  artifact: /.*\.whl/
   draft: true
   on:
     APPVEYOR_REPO_TAG: true # deploy on tag push only
