@@ -130,6 +130,9 @@ class BuildCommand(build):
 
     build.finalize_options(self)
 
+  def run(self):
+    build.run(self)
+    shutil.copy('yara.pyi', self.build_lib)
 
 
 class BuildExtCommand(build_ext):
